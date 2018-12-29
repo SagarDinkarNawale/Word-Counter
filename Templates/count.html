@@ -1,0 +1,13 @@
+<a href ="{% url 'home' %}">
+    <h1><b><i>Back To HomePage</i></b></h1>
+   </a>
+<h1> Your Text Is :</h1><br>
+<h2>
+    {{ text }}
+</h2>
+<h1> The Total Word is :{{ length }}</h1><br>
+ <br><br>
+
+{% for word,value in worddictionary %}
+{{word}}={{value}}<br>
+{%endfor%}
